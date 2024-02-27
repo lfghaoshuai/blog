@@ -7,13 +7,13 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "feng",
+    url: "#",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://fe-sz30.oss-cn-hangzhou.aliyuncs.com/pressImg/32123toux.jpg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -21,12 +21,16 @@ export default hopeTheme({
 
   // 导航栏
   navbar,
-
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "Search"],
+  },
   // 侧边栏
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  // footer: "页脚",
   displayFooter: true,
 
   // 博客相关
@@ -37,7 +41,7 @@ export default hopeTheme({
       BiliBili: "https://example.com",
       Email: "mailto:info@example.com",
       Gitee: "https://example.com",
-      GitHub: "https://example.com",
+      GitHub: "https://github.com/lfghaoshuai",
       Gitlab: "https://example.com",
       Steam: "https://example.com",
     },
@@ -47,6 +51,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
+      "/study/project/UserCenter/1.html":['1234']
     },
   },
 
@@ -62,9 +67,13 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
+    //代码模块复制
+    copyCode: {},
+    
     autoCatalog:{
       index:true
     },
+    
     // 在启用之前需要安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务器，在生产环境中请自行部署并使用自己的服务器！
     // comment: {
@@ -105,7 +114,12 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
+      // 启用 GFM 警告
+      alert: true,
 
+      //
+
+      
       // 在启用之前安装 chart.js
       // chart: true,
 

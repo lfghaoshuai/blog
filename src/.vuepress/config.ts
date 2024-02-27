@@ -5,10 +5,10 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "Feng's Blog",
+  title: "Feng's 小屋",
   description: "vuepress-theme-hope 的博客演示",
 
-  theme,
+  theme
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,

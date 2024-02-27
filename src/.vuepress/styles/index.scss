@@ -1,1 +1,60 @@
 // place your custom styles here
+.vp-blog-hero-title{
+    animation: mymove2 1.5s infinite linear;
+}
+
+@keyframes mymove2 {
+    0% {
+        transform: translate3d(0, 0%, 0);
+    }
+    25% {
+        transform: translate3d(0, 5%, 0);
+    }
+    75% {
+        transform: translate3d(0, -5%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0%, 0);
+    }
+}
+.vp-blogger-description{
+    width: 4em;
+    height: 1.5em;
+    border-right: 1px solid transparent;
+    animation: typing 2s steps(42, end), blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: Consolas, Monaco;
+    word-break: break-all;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 8em;
+    }
+}
+
+/* 光标 */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: currentColor;
+    }
+}
+// h2{
+//     border-bottom: none;
+// }
+
+code{
+    color: rgb(6, 157, 251);
+}
