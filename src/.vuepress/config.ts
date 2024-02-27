@@ -6,7 +6,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "Feng's 小屋",
-  description: "vuepress-theme-hope 的博客演示",
+  description: "博客",
 
   theme
 

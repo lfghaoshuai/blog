@@ -4,7 +4,7 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://blog.fengwin.top",
 
   author: {
     name: "feng",
@@ -15,8 +15,8 @@ export default hopeTheme({
 
   logo: "https://fe-sz30.oss-cn-hangzhou.aliyuncs.com/pressImg/32123toux.jpg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  repo: "lfghaoshuai/blog",
+  docsBranch:'master',
   docsDir: "src",
 
   // 导航栏
@@ -39,11 +39,11 @@ export default hopeTheme({
     intro: "/intro.html",
     medias: {
       BiliBili: "https://example.com",
-      Email: "mailto:info@example.com",
+      Email: "ljf571429122@gmail.com",
       Gitee: "https://example.com",
       GitHub: "https://github.com/lfghaoshuai",
-      Gitlab: "https://example.com",
-      Steam: "https://example.com",
+      Gitlab: "http://gitlab.code-nav.cn/Coldeyes",
+      Steam: "https://steamcommunity.com/",
     },
   },
 
@@ -61,7 +61,7 @@ export default hopeTheme({
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
-  // hotReload: true,
+  hotReload: true,
 
   // 在这里配置主题提供的插件
   plugins: {
