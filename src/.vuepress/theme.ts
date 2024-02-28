@@ -36,7 +36,7 @@ export default hopeTheme({
   // 博客相关
   blog: {
     description: "一个前端开发者",
-    intro: "/intro.html",
+    intro: "/aboutMe",
     medias: {
       BiliBili: "https://example.com",
       Email: "ljf571429122@gmail.com",
