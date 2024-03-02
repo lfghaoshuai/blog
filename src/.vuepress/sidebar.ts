@@ -40,7 +40,7 @@ export default sidebar({
           {
             text:"用户中心项目",
             prefix:"/study/project/UserCenter",
-            children:["1.md","2.md"],
+            children:["1.md","2.md","3.md"],
             collapsible: true,
           }
         ],

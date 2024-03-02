@@ -2,6 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default hopeTheme({
   hostname: "https://blog.fengwin.top",
@@ -51,7 +52,8 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/study/project/UserCenter/1.html":['1234']
+      "/study/project/UserCenter/1.html":['1234'],//纯测试用
+      "/study/project/UserCenter/2.html":['1234']
     },
   },
 
@@ -66,6 +68,15 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+    //评论功能
+    comment: {
+      provider: "Giscus", 
+      repo: "lfghaoshuai/blogtalk", 
+      repoId: "R_kgDOLZpE5w",  
+      category: "Announcements",
+      categoryId: "DIC_kwDOLZpE584CdnEJ"
+    },
+    // searchPro: true,
 
     //代码模块复制
     copyCode: {},
@@ -84,7 +95,7 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
-
+    
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
@@ -117,8 +128,10 @@ export default hopeTheme({
       // 启用 GFM 警告
       alert: true,
 
-      //
-
+      
+      
+        
+     
       
       // 在启用之前安装 chart.js
       // chart: true,
