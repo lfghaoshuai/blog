@@ -29,6 +29,11 @@ export default navbar([
         icon: "pen-to-square",
         link: "project",
       },
+      {
+        text: "软考",
+        icon: "pen-to-square",
+        link: "Software",
+      },
     ]
   },
   {

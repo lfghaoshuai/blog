@@ -53,7 +53,9 @@ export default hopeTheme({
     config: {
       "/demo/encrypt.html": ["1234"],
       "/study/project/UserCenter/1.html":['1234'],//纯测试用
-      "/study/project/UserCenter/2.html":['1234']
+      "/study/project/UserCenter/2.html":['1234'],
+      "/study/project/UserCenter/3.html":['1234'],
+      "/study/project/UserCenter/4.html":['1234']
     },
   },
 

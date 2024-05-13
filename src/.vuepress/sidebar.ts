@@ -40,7 +40,20 @@ export default sidebar({
           {
             text:"用户中心项目",
             prefix:"/study/project/UserCenter",
-            children:["1.md","2.md","3.md"],
+            children:["1.md","2.md","3.md","4.md"],
+            collapsible: true,
+          }
+        ],
+        
+      },
+      {
+        text:"软考资料",
+        prefix:"/study/Software",
+        children:[
+          {
+            text:"软考笔记以及历年试题",
+            prefix:"/study/Software/",
+            children:["SystemArchitect/note.md"],
             collapsible: true,
           }
         ],
